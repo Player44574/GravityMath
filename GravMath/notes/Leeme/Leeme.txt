@@ -1,0 +1,21 @@
+#Atención a todo el profesorado, antes de continuar aquí hay una pequeña guia para utilizar
+el programa correctamente
+
+- Para crear niveles:
+	1.- Pulsa en el boton "+" que está situado arriba en la esquina del menú principal.
+	2.- Añade las bolas estáticas con lo valores que desees.
+	3.- Añade las bolas dinámicas con lo valores que desees. (Estas serán del mismo color
+	que las bolas estáticas, son las que cuentan como solución. Utiliza números distintos para
+	distintas soluciones porque el -1 de una bola roja no servirá como solución de un -1 de una bola
+	verde. Además en partida no se distingue porque no se muestran los colores, solo sirven como
+	guía para la edición.)
+	4.- Guarda en nivel y copia el código.
+	5.- Comparte el código con la clase (Ej: via classroom).
+	
+- Para jugar niveles creados por profesores:
+	1.- Pulsa el botón "Introducir código"
+	2.- Introduce el código del nivel
+	
+añadir a JDSherbert y a Freepik en los creditos
+
+ajustes tiene:

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_color_ball",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_color_ball",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
