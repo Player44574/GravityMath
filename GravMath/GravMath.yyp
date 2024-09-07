@@ -43,6 +43,7 @@
     {"id":{"name":"fn_default","path":"fonts/fn_default/fn_default.yy",},},
     {"id":{"name":"Leeme","path":"notes/Leeme/Leeme.yy",},},
     {"id":{"name":"obj_ini","path":"objects/obj_ini/obj_ini.yy",},},
+    {"id":{"name":"obj_level_and_ui","path":"objects/obj_level_and_ui/obj_level_and_ui.yy",},},
     {"id":{"name":"obj_main_menu","path":"objects/obj_main_menu/obj_main_menu.yy",},},
     {"id":{"name":"obj_screen_driver","path":"objects/obj_screen_driver/obj_screen_driver.yy",},},
     {"id":{"name":"obj_static_ball","path":"objects/obj_static_ball/obj_static_ball.yy",},},
