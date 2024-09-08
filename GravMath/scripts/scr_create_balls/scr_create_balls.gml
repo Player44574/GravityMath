@@ -13,16 +13,13 @@ function scr_create_balls(nBalls){
 		else{generated=1}
 	}
 	
-	if generated=0{show_debug_message("Error"+ string(counter)) counter++}
-	else if generated=1{
+	if generated=1{
 		out="Bolas:\n"
 		for (i=0; i<nBalls; i++) {
 		    out=out + "Bola" + string(balls[i]) + " s1:" + string(solutionBalls[3*i]) 
 			 + " s2:"+ string(solutionBalls[3*i+1])
 			 + " s3:"+ string(solutionBalls[3*i+2]) + "\n"
 		}
-		
-		show_message(out)
 	}
 	return generated
 }

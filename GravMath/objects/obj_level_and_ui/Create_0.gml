@@ -7,11 +7,13 @@ while generated=0{
 	scr_create_balls(nBalls)
 }
 
-for (i=0; i<nBalls; i++) {
+for (var i=0; i<nBalls; i++){
     staticBall=instance_create_layer(0,0,layer,obj_static_ball)
-	with staticBall{
-		ballID = obj_level_and_ui.i
-		number = obj_level_and_ui.balls[obj_level_and_ui.i]
+	with (staticBall){
+		ballID = i
+		number = obj_level_and_ui.balls[i]
 		global.ballnum++
 	}
 }
+
+layer=layer_get_id("Instances_1")

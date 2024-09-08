@@ -1,6 +1,5 @@
 //draw UI
-draw_set_color(make_color_rgb(71, 77, 93))
-draw_rectangle(0,0,global.cw,global.ch,false)
-
-draw_sprite(spr_play_button,0,global.cw/2-96+8,global.ch/2)
-draw_sprite(spr_play_button,0,global.cw/2+96-8,global.ch/2)
+if draw_custom_button(global.cw/2-176,global.ch/2-64-44,spr_play_button_wide,global.TXTPlay){
+	instance_destroy()
+	instance_create_layer(0,0,layer,obj_level_and_ui)
+}

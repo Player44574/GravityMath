@@ -16,6 +16,6 @@ el programa correctamente
 	1.- Pulsa el botón "Introducir código"
 	2.- Introduce el código del nivel
 	
-añadir a JDSherbert y a Freepik en los creditos
+añadir a JDSherbert y a Freepik, starline en los creditos
 
 ajustes tiene:
