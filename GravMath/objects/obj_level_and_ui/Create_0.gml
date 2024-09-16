@@ -2,6 +2,7 @@ global.ballnum=0
 nBalls = round(irandom_range(1,4))
 generated=0
 counter=0
+time=0
 
 while generated=0{
 	scr_create_balls(nBalls)

@@ -11,10 +11,17 @@ function scr_load_localization(language){
 		global.TXTSettings = "Ajustes."
 		global.TXTNLV = "Crear nivel."
 		
-		
 	}else if TRlanguage = "English"{
+		global.TXTPlay = "Play."
+		global.TXTIntCod = "Introducir código."
+		global.TXTSettings = "Options."
+		global.TXTNLV = "Crear nivel."
 		
 	}else if TRlanguage = "Français"{
+		global.TXTPlay = "Jouer."
+		global.TXTIntCod = "Introducir código."
+		global.TXTSettings = "Paramètres."
+		global.TXTNLV = "Crear nivel."
 		
 	}
 }
