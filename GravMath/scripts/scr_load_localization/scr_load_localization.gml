@@ -10,18 +10,36 @@ function scr_load_localization(language){
 		global.TXTIntCod = "Introducir código."
 		global.TXTSettings = "Ajustes."
 		global.TXTNLV = "Crear nivel."
+		global.TXTLang = "Idioma:"
+		global.TXTSnd = "Sonido:"
+		global.TXTDiff = "Dificultad:"
+		global.TXTEz = "Fácil."
+		global.TXTMed = "Medio."
+		global.TXTMMed = "Dificil."
 		
 	}else if TRlanguage = "English"{
 		global.TXTPlay = "Play."
-		global.TXTIntCod = "Introducir código."
+		global.TXTIntCod = "Enter code."
 		global.TXTSettings = "Options."
-		global.TXTNLV = "Crear nivel."
+		global.TXTNLV = "Create level."
+		global.TXTLang = "Language:"
+		global.TXTSnd = "Sound:"
+		global.TXTDiff = "Difficulty:"
+		global.TXTEz = "Easy."
+		global.TXTMed = "Medium."
+		global.TXTMMed = "Hard."
 		
 	}else if TRlanguage = "Français"{
 		global.TXTPlay = "Jouer."
-		global.TXTIntCod = "Introducir código."
+		global.TXTIntCod = "Entrez le code."
 		global.TXTSettings = "Paramètres."
-		global.TXTNLV = "Crear nivel."
+		global.TXTNLV = "Créer un niveau."
+		global.TXTLang = "Langue:"
+		global.TXTSnd = "Son:"
+		global.TXTDiff = "Difficulté:"
+		global.TXTEz = "Facile."
+		global.TXTMed = "Moitié."
+		global.TXTMMed = "Difficile."
 		
 	}
 }
