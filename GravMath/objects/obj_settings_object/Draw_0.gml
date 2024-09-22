@@ -32,13 +32,44 @@ if global.displayRotation=0{
 		ini_close()
 		scr_load_localization(2)
 	}
-	//draw sound setting
+	//draw difficulty setting
 	draw_text(128, 144, global.TXTDiff)
 	
-	if draw_custom_button(128,192,spr_blank_button,global.TXTEz){
-		
+	if draw_custom_button_ext(128,192,spr_difficulty_button,0,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",0)
+		ini_close()
+		global.dificulty=0
 	}
-	//draw difficulty setting
+	if draw_custom_button_ext(128+88,192,spr_difficulty_button,1,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",1)
+		ini_close()
+		global.dificulty=1
+	}
+	if draw_custom_button_ext(128+88+88,192,spr_difficulty_button,2,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",2)
+		ini_close()
+		global.dificulty=2
+	}
+	
+	//draw sound setting
+	draw_text(128, 272, global.TXTSnd)
+	if draw_custom_button_ext(128,320,spr_blank_button,2,""){
+		if global.sound=0{
+			ini_open("options.ini")
+			ini_write_real("options","sound",1)
+			ini_close()
+			global.sound=1
+		}else{
+			ini_open("options.ini")
+			ini_write_real("options","sound",0)
+			ini_close()
+			global.sound=0
+		}
+	}
+	draw_sprite_ext(spr_sound,global.sound,128+8,324,0.75,0.75,0,c_white,1)
 	
 }else{
 	//draw bars
@@ -73,4 +104,43 @@ if global.displayRotation=0{
 		ini_close()
 		scr_load_localization(2)
 	}
+
+	//draw difficulty setting
+	draw_text(8, 240, global.TXTDiff)
+	
+	if draw_custom_button_ext(8,280,spr_difficulty_button,0,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",0)
+		ini_close()
+		global.dificulty=0
+	}
+	if draw_custom_button_ext(8+88,280,spr_difficulty_button,1,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",1)
+		ini_close()
+		global.dificulty=1
+	}
+	if draw_custom_button_ext(8+88+88,280,spr_difficulty_button,2,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",2)
+		ini_close()
+		global.dificulty=2
+	}
+
+	//draw sound setting
+	draw_text(8, 352, global.TXTSnd)
+	if draw_custom_button_ext(8,388,spr_blank_button,2,""){
+		if global.sound=0{
+			ini_open("options.ini")
+			ini_write_real("options","sound",1)
+			ini_close()
+			global.sound=1
+		}else{
+			ini_open("options.ini")
+			ini_write_real("options","sound",0)
+			ini_close()
+			global.sound=0
+		}
+	}
+	draw_sprite_ext(spr_sound,global.sound,8+8,392,0.75,0.75,0,c_white,1)
 }

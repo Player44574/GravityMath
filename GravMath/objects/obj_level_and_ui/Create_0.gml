@@ -1,5 +1,6 @@
 global.ballnum=0
-nBalls = round(irandom_range(1,4))
+global.pause=0
+nBalls = round(irandom_range(1.6,4))
 generated=0
 counter=0
 time=0

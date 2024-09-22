@@ -1,8 +1,3 @@
-//one ball
-if global.ballnum=1 and ballID=0{
-	x = global.cw/2
-	y = global.ch/2
-}
 //two balls
 if global.ballnum=2 and ballID=0{
 	x = global.cw/2-96

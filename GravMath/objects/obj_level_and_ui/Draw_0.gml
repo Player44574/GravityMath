@@ -21,10 +21,25 @@ if global.displayRotation=0{
 	draw_rectangle(0,global.ch-128,global.cw,global.ch,false)
 	
 	//drawTime
+	minutes=floor(time/3600)
+	seconds=floor(time/60)-minutes*60
+	
+	if minutes < 10 {
+		minutes = "0"+string(minutes)
+	}else{
+		minutes = string(minutes)
+	}
+	
+	if seconds < 10 {
+		seconds = "0"+string(seconds)
+	}else{
+		seconds = string(seconds)
+	}
+	
 	draw_set_color(c_white)
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_center)
-	draw_text(global.cw/2,72,string(floor(time/3600))+":"+string(floor(time/60)))
+	draw_text(global.cw/2,72,minutes+":"+seconds)
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
 	draw_sprite_ext(spr_time,0,global.cw/2,32,0.75,0.75,0,c_white,1)
