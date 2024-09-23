@@ -5,7 +5,7 @@ if global.displayRotation=0{
 	draw_rectangle(0,0,96,global.ch,false)
 	
 	//draw home button
-	if draw_custom_button(8,8,spr_home_button,""){
+	if draw_custom_button(5,8,spr_home_button,""){
 		instance_destroy()
 		instance_create_layer(0,0,layer,obj_main_menu)
 	}
@@ -32,8 +32,13 @@ if global.displayRotation=0{
 		ini_close()
 		scr_load_localization(2)
 	}
+	
 	//draw difficulty setting
-	draw_text(128, 144, global.TXTDiff)
+	if global.dificulty=0{difficultyText = global.TXTEz}
+	else if global.dificulty=1{difficultyText = global.TXTMed}
+	else if global.dificulty=2{difficultyText = global.TXTMMed}
+	
+	draw_text(128, 144, global.TXTDiff + " " + difficultyText)
 	
 	if draw_custom_button_ext(128,192,spr_difficulty_button,0,""){
 		ini_open("options.ini")
@@ -106,7 +111,11 @@ if global.displayRotation=0{
 	}
 
 	//draw difficulty setting
-	draw_text(8, 240, global.TXTDiff)
+	if global.dificulty=0{difficultyText = global.TXTEz}
+	else if global.dificulty=1{difficultyText = global.TXTMed}
+	else if global.dificulty=2{difficultyText = global.TXTMMed}
+	
+	draw_text(8, 240, global.TXTDiff + " " + difficultyText)
 	
 	if draw_custom_button_ext(8,280,spr_difficulty_button,0,""){
 		ini_open("options.ini")

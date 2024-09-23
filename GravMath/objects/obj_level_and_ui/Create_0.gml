@@ -1,6 +1,11 @@
 global.ballnum=0
 global.pause=0
-nBalls = round(irandom_range(1.6,4))
+
+nBalls=0
+while nBalls < 2 {
+	nBalls = round(irandom_range(1.6,4))
+}
+
 generated=0
 counter=0
 time=0
