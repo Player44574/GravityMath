@@ -1,5 +1,7 @@
 global.ballnum=0
+global.solballnum=0
 global.pause=0
+global.pickingAball=0
 
 nBalls=0
 while nBalls < 2 {
@@ -24,3 +26,14 @@ for (var i=0; i<nBalls; i++){
 }
 
 layer=layer_get_id("Instances_1")
+
+array_shuffle(solutionBalls)
+
+for (var i=0; i<nBalls*3; i++){
+    dynamicBall=instance_create_layer(0,0,layer,obj_dynamic_ball)
+	with (dynamicBall){
+		ballID = i
+		number = obj_level_and_ui.solutionBalls[i]
+		global.solballnum++
+	}
+}
