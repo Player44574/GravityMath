@@ -42,6 +42,7 @@
   },
   "name":"GravMath",
   "resources":[
+    {"id":{"name":"fn_default_mini","path":"fonts/fn_default_mini/fn_default_mini.yy",},},
     {"id":{"name":"fn_default","path":"fonts/fn_default/fn_default.yy",},},
     {"id":{"name":"Leeme","path":"notes/Leeme/Leeme.yy",},},
     {"id":{"name":"obj_dynamic_ball","path":"objects/obj_dynamic_ball/obj_dynamic_ball.yy",},},
@@ -74,6 +75,7 @@
     {"id":{"name":"snd_pop_up_close","path":"sounds/snd_pop_up_close/snd_pop_up_close.yy",},},
     {"id":{"name":"snd_pop_up_open","path":"sounds/snd_pop_up_open/snd_pop_up_open.yy",},},
     {"id":{"name":"snd_select","path":"sounds/snd_select/snd_select.yy",},},
+    {"id":{"name":"spr_ball_mini","path":"sprites/spr_ball_mini/spr_ball_mini.yy",},},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},},
     {"id":{"name":"spr_banderas_pequ","path":"sprites/spr_banderas_pequ/spr_banderas_pequ.yy",},},
     {"id":{"name":"spr_banderas","path":"sprites/spr_banderas/spr_banderas.yy",},},

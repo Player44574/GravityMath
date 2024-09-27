@@ -15,7 +15,10 @@ function scr_load_localization(language){
 		global.TXTDiff = "Dificultad:"
 		global.TXTEz = "Fácil."
 		global.TXTMed = "Medio."
-		global.TXTMMed = "Dificil."
+		global.TXTMMed = "Difícil."
+		global.TXTMPause = "Pausa."
+		global.TXTWin = "¡Has ganado! :D"
+		global.TXTLoose = "Has perdido :("
 		
 	}else if TRlanguage = "English"{
 		global.TXTPlay = "Play."
@@ -28,6 +31,9 @@ function scr_load_localization(language){
 		global.TXTEz = "Easy."
 		global.TXTMed = "Medium."
 		global.TXTMMed = "Hard."
+		global.TXTMPause = "Pause."
+		global.TXTWin = "You win! :D"
+		global.TXTLoose = "You loose :("
 		
 	}else if TRlanguage = "Français"{
 		global.TXTPlay = "Jouer."
@@ -40,6 +46,8 @@ function scr_load_localization(language){
 		global.TXTEz = "Facile."
 		global.TXTMed = "Moitié."
 		global.TXTMMed = "Difficile."
-		
+		global.TXTMPause = "Pause."
+		global.TXTWin = "Tu as gagné! :D"
+		global.TXTLoose = "Tu as perdu :("
 	}
 }

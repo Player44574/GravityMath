@@ -37,3 +37,6 @@ if global.ballnum=4 and ballID=3{
 	x = global.cw/2+96
 	y = global.ch/2+96
 }
+
+if displayNumber=0 and global.finish=0{displayNumber=number}
+if global.checkWin=1{global.winNumber+=displayNumber}

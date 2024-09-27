@@ -30,7 +30,7 @@ if global.displayRotation=0{
 	draw_sprite_ext(spr_time,0,48,global.ch/2-64,0.75,0.75,0,c_white,1)
 	
 	//draw pause button
-	if draw_custom_button(5,8,spr_pause_button,""){global.pause=1}
+	if draw_custom_button(5,8,spr_pause_button,""){if global.finish=0{global.pause=1}}
 	
 }else{
 	//draw bars
@@ -63,5 +63,5 @@ if global.displayRotation=0{
 	draw_sprite_ext(spr_time,0,global.cw/2,32,0.75,0.75,0,c_white,1)
 	
 	//draw pause button
-	if draw_custom_button(8,8,spr_pause_button,""){global.pause=1}
+	if draw_custom_button(8,8,spr_pause_button,""){if global.finish=0{global.pause=1}}
 }

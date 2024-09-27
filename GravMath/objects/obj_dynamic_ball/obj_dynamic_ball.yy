@@ -6,6 +6,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_static_ball","path":"objects/obj_static_ball/obj_static_ball.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_dynamic_ball",
@@ -36,6 +37,9 @@
     "name":"spr_ball",
     "path":"sprites/spr_ball/spr_ball.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_ball_mini",
+    "path":"sprites/spr_ball_mini/spr_ball_mini.yy",
+  },
   "visible":true,
 }
