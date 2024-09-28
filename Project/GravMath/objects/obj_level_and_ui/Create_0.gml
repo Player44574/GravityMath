@@ -37,7 +37,7 @@ layer=layer_get_id("Instances_1")
 
 for (i=0; i<10; i++) {
 	randomize()
-    array_shuffle(solutionBalls)
+    solutionBalls=array_shuffle(solutionBalls)
 }
 
 for (var i=0; i<nBalls*3; i++){
