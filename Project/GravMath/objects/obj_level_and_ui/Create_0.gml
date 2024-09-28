@@ -35,7 +35,10 @@ for (var i=0; i<nBalls; i++){
 
 layer=layer_get_id("Instances_1")
 
-array_shuffle(solutionBalls)
+for (i=0; i<10; i++) {
+	randomize()
+    array_shuffle(solutionBalls)
+}
 
 for (var i=0; i<nBalls*3; i++){
     dynamicBall=instance_create_layer(0,0,layer,obj_dynamic_ball)
