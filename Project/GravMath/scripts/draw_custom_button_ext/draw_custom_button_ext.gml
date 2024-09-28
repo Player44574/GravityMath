@@ -14,7 +14,7 @@ function draw_custom_button_ext(x,y,buttonspr, imgIndex , customTXT){
 		draw_set_color(c_white)
 	}
 	
-	if mouse_check_button_released(mb_any) and point_in_rectangle(mouse_x,mouse_y,x,y,x+sprite_get_width(buttonspr),y+sprite_get_height(buttonspr)){pressed=1}
+	if mouse_check_button_released(mb_any) and point_in_rectangle(mouse_x,mouse_y,x,y,x+sprite_get_width(buttonspr),y+sprite_get_height(buttonspr)){pressed=1 if global.sound=1{audio_play_sound(snd_select,0,0)}}
 	else{pressed=0}
 	
 	return pressed;

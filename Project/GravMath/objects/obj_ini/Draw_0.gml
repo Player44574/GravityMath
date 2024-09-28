@@ -10,24 +10,24 @@ if loadSetUP=1{
 		ini_open("options.ini")
 		ini_write_real("options","language",0)
 		ini_close()
-		instance_create_layer(0,0,layer,obj_ini)
 		instance_destroy(obj_screen_driver)
 		instance_destroy()
+		game_restart()
 	}
 	if point_in_rectangle(mouse_x,mouse_y,global.cw/2-64,global.ch/2-64,global.cw/2+64,global.ch/2+64) and mouse_check_button_released(mb_any){
 		ini_open("options.ini")
 		ini_write_real("options","language",1)
 		ini_close()
-		instance_create_layer(0,0,layer,obj_ini)
 		instance_destroy(obj_screen_driver)
 		instance_destroy()
+		game_restart()
 	}
 	if point_in_rectangle(mouse_x,mouse_y,global.cw/2-64,global.ch/2+128-64,global.cw/2+64,global.ch/2+128+64) and mouse_check_button_released(mb_any){
 		ini_open("options.ini")
 		ini_write_real("options","language",2)
 		ini_close()
-		instance_create_layer(0,0,layer,obj_ini)
 		instance_destroy(obj_screen_driver)
 		instance_destroy()
+		game_restart()
 	}
 }

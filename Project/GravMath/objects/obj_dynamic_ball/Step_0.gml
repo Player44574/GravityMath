@@ -19,6 +19,7 @@ if global.pause=0 and global.finish=0{
 	if point_in_rectangle(mouse_x,mouse_y,x-32,y-32,x+32,y+32) and mouse_check_button_pressed(mb_any) and global.pickingAball=0{
 		global.pickingAball=1
 		pickingThisBall=1
+		if global.sound=1{audio_play_sound(snd_cursor_4,0,0)}
 	}
 	else if mouse_check_button(mb_any) and pickingThisBall=1{
 		global.pickingAball=1
@@ -36,6 +37,7 @@ if global.pause=0 and global.finish=0{
 		global.pickingAball=0
 		applyPhysics=1
 		pickingThisBall=0
+		if global.sound=1{audio_play_sound(snd_cursor_4,0,0)}
 	}
 }
 
@@ -194,7 +196,13 @@ if applyPhysics=1 and initialPosition=0{
 	}
 	
 	if place_meeting(xcenter + ballRadius * cos(angle + 45 * (offSet)),ycenter + ballRadius * sin(angle + 45 * (offSet)),obj_dynamic_ball) and global.finish=0{
-		offSet+=1
+		for (var i = 0; i < 40; ++i) {
+			if not place_meeting(xcenter + ballRadius * cos(angle + 45 * (offSet)),ycenter + ballRadius * sin(angle + 45 * (offSet)),obj_dynamic_ball){
+				break
+			}else{
+				offSet+=1
+			}
+		}
 	}
 	
 	x = lerp(x,xcenter + ballRadius * cos(angle + 45 * offSet),0.2)
