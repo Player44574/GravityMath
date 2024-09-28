@@ -33,7 +33,7 @@ if global.pause=0 and global.finish=0{
 			y=clamp(mouse_y,129,global.ch)
 		}
 	}
-	else if point_in_rectangle(mouse_x,mouse_y,x-32,y-32,x+32,y+32) and mouse_check_button_released(mb_any) and global.pickingAball=1{
+	else if pickingThisBall=1 and mouse_check_button_released(mb_any) and global.pickingAball=1{
 		global.pickingAball=0
 		applyPhysics=1
 		pickingThisBall=0
@@ -195,9 +195,9 @@ if applyPhysics=1 and initialPosition=0{
 		}
 	}
 	
-	if place_meeting(xcenter + ballRadius * cos(angle + 45 * (offSet)),ycenter + ballRadius * sin(angle + 45 * (offSet)),obj_dynamic_ball) and global.finish=0{
-		for (var i = 0; i < 40; ++i) {
-			if not place_meeting(xcenter + ballRadius * cos(angle + 45 * (offSet)),ycenter + ballRadius * sin(angle + 45 * (offSet)),obj_dynamic_ball){
+	if place_meeting(xcenter + ballRadius * cos(angle + (offSet)),ycenter + ballRadius * sin(angle + (offSet)),obj_dynamic_ball) and global.finish=0{
+		for (var i = 0; i < 2000; ++i) {
+			if not place_meeting(xcenter + ballRadius * cos(angle + (offSet)),ycenter + ballRadius * sin(angle + (offSet)),obj_dynamic_ball){
 				break
 			}else{
 				offSet+=1
@@ -205,8 +205,8 @@ if applyPhysics=1 and initialPosition=0{
 		}
 	}
 	
-	x = lerp(x,xcenter + ballRadius * cos(angle + 45 * offSet),0.2)
-	y = lerp(y,ycenter + ballRadius * sin(angle + 45 * offSet),0.2)
+	x = lerp(x,xcenter + ballRadius * cos(angle + offSet),0.2)
+	y = lerp(y,ycenter + ballRadius * sin(angle + offSet),0.2)
 }
 
 //finish game
