@@ -152,4 +152,15 @@ if global.displayRotation=0{
 		}
 	}
 	draw_sprite_ext(spr_sound,global.sound,8,392-4,0.75,0.75,0,c_white,1)
+	
+	draw_set_halign(fa_right)
+	draw_set_valign(fa_bottom)
+	draw_set_color(c_black)
+	draw_set_alpha(0.5)
+	draw_text(global.cw-8+2,global.ch-8+2,global.TXTHechoPor + "Pedro Alcedo")
+	draw_set_color(c_white)
+	draw_set_alpha(1)
+	draw_text(global.cw-8,global.ch-8,global.TXTHechoPor + "Pedro Alcedo")
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
 }

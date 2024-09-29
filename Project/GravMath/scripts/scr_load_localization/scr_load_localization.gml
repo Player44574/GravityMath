@@ -19,6 +19,7 @@ function scr_load_localization(language){
 		global.TXTMPause = "Pausa."
 		global.TXTWin = "¡Has ganado! :D"
 		global.TXTLoose = "Has perdido :("
+		global.TXTHechoPor="Hecho por: "
 		
 	}else if TRlanguage = "English"{
 		global.TXTPlay = "Play."
@@ -34,6 +35,7 @@ function scr_load_localization(language){
 		global.TXTMPause = "Pause."
 		global.TXTWin = "You win! :D"
 		global.TXTLoose = "You loose :("
+		global.TXTHechoPor="Made by: "
 		
 	}else if TRlanguage = "Français"{
 		global.TXTPlay = "Jouer."
@@ -49,5 +51,6 @@ function scr_load_localization(language){
 		global.TXTMPause = "Pause."
 		global.TXTWin = "Tu as gagné! :D"
 		global.TXTLoose = "Tu as perdu :("
+		global.TXTHechoPor="Réalisé par: "
 	}
 }
