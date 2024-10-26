@@ -15,6 +15,7 @@ if setUP=-1{//interrups load and goes to set up language
 	language=ini_read_real("options","language",-1)
 	global.sound=ini_read_real("options","sound",1)
 	global.dificulty=ini_read_real("options","dificulty",0)
+	global.howToPlay=ini_read_real("gameplay","readme",0)
 	ini_close()
 
 	//LocalizeGame

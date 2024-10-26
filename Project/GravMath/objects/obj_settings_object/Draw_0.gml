@@ -37,6 +37,7 @@ if global.displayRotation=0{
 	if global.dificulty=0{difficultyText = global.TXTEz}
 	else if global.dificulty=1{difficultyText = global.TXTMed}
 	else if global.dificulty=2{difficultyText = global.TXTMMed}
+	else if global.dificulty=3{difficultyText = global.TXTEXPERT}
 	
 	draw_text(128, 144, global.TXTDiff + " " + difficultyText)
 	
@@ -57,6 +58,12 @@ if global.displayRotation=0{
 		ini_write_real("options","dificulty",2)
 		ini_close()
 		global.dificulty=2
+	}
+	if draw_custom_button_ext(128+88+88+88,192,spr_difficulty_button,3,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",3)
+		ini_close()
+		global.dificulty=3
 	}
 	
 	//draw sound setting
@@ -124,6 +131,7 @@ if global.displayRotation=0{
 	if global.dificulty=0{difficultyText = global.TXTEz}
 	else if global.dificulty=1{difficultyText = global.TXTMed}
 	else if global.dificulty=2{difficultyText = global.TXTMMed}
+	else if global.dificulty=3{difficultyText = global.TXTEXPERT}
 	
 	draw_text(8, 240, global.TXTDiff + " " + difficultyText)
 	
@@ -145,6 +153,12 @@ if global.displayRotation=0{
 		ini_close()
 		global.dificulty=2
 	}
+	if draw_custom_button_ext(8+88+88+88,280,spr_difficulty_button,3,""){
+		ini_open("options.ini")
+		ini_write_real("options","dificulty",3)
+		ini_close()
+		global.dificulty=3
+	}
 
 	//draw sound setting
 	draw_text(8, 352, global.TXTSnd)
@@ -163,6 +177,7 @@ if global.displayRotation=0{
 	}
 	draw_sprite_ext(spr_sound,global.sound,8,392-4,0.75,0.75,0,c_white,1)
 	
+	draw_set_font(fn_default_mini)
 	draw_set_halign(fa_right)
 	draw_set_valign(fa_bottom)
 	draw_set_color(c_black)
@@ -173,4 +188,5 @@ if global.displayRotation=0{
 	draw_text(global.cw-8,global.ch-8,global.TXTHechoPor + "Pedro Alcedo")
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
+	draw_set_font(fn_default)
 }
