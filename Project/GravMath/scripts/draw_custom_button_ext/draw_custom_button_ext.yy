@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_custom_button_ext",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"scr_color_ball",
   "isCompatibility":false,
   "isDnD":false,
